@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Language Basics</title>
+	</head>
+	
+	<body>
+			<h1>Week One ~ JavaScript Code Basics</h1>
+			
+			<button onclick="myFunction() ">Click Me</button>
+		
+		<!--adding an inline JavaScript code, must be enclosed within script tags/elements-->
+		<script>
+			function myFunction()
+			{
+				alert("Hello There! I am an alert box!");
+			}
+		</script>
+		
+		<script>
+			// Word with prompts and writing to the browser window
+			
+			const favFood = prompt('What is your favorite food?');
+			const codePrac = prompt('How many hours a day will you practice coding?');
+			const hours = codePrac * 365;
+			document.write('<br>Your favorite food is ' + favFood);
+			document.write('<br>You will practice  ' + codePrac +  ' hrs a day, which equates to ' + hours + ' hours a year. Will this be enough hours to become an expert?' );
+			
+			//Create another script that uses a couple of prompts and then perform a math equation
+			
+			//your code will go here
+			
+			//Script that works with getElementById and innerHTML
+			//Dont worry if your don't competely understand, there will be additional notes as you progress in this course
+		</script>
+		
+		<script>
+		function changeText()
+		{
+		document.getElementById('newText').innerHTML = 'JavaScript is so much FUN!';
+		}
+		</script>
+		
+		
+		<p>Your thoughts about JavaScript! <strong id='newText'>This text will be replaced!</strong> </p>
+		<input type='button' onclick='changeText()' value='Click for New Text'>
+		
+		
+	</body>
+</html>
